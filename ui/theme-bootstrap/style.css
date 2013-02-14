@@ -1428,7 +1428,7 @@ pre {
 }
 .bootstrap .mendixDialogInformation .dijitDialogPaneContent { color: #3A87AD; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
 .bootstrap .mendixDialogError .dijitDialogPaneContent { color: #B94A48; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
-.bootstrap .mendixDialogWarning .dijitDialogPaneContent { color: #FFF; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+.bootstrap .mendixDialogWarning .dijitDialogPaneContent { color: #c09853; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
 .bootstrap .mendixDialogInformation {
   border: 1px solid #BCE8F1 !important;
   background: #D9EDF7;
@@ -1438,6 +1438,6 @@ pre {
   background: #F2DEDE;
 }
 .bootstrap .mendixDialogWarning {
-  border: 1px solid #F89406 !important;
-  background: #FAA732;
+  border: 1px solid #FBEEd5 !important;
+  background: #FCF8E3;
 }
