@@ -1,0 +1,1443 @@
+/*   
+Theme Name: Bootstrap
+Description: Bootstrap Theme
+Author: Mendix
+Author URL: http://www.mendix.com 
+Version: 1.0
+*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+body {
+  padding-top: 40px;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  background: #ffffff;
+}
+a {
+  color: #0088cc;
+  text-decoration: none;
+}
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 940px;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}	
+.container:before,
+.container:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.container:after {
+  clear: both;
+}
+.container-fluid {
+  padding-right: 20px;
+  padding-left: 20px;
+  *zoom: 1;
+}
+.container-fluid:before,
+.container-fluid:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.container-fluid:after {clear: both; }
+p {margin: 0 0 10px; }
+small {font-size: 85%; }
+strong {font-weight: bold; }
+em {font-style: italic; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 1;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 40px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 20px;
+}
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+}
+h6 {
+  font-size: 12px;
+  line-height: 20px;
+}
+h1 small { font-size: 24px; }
+h2 small { font-size: 18px; }
+h3 small { font-size: 14px; }
+h4 small { font-size: 14px; }
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+li {
+  line-height: 20px;
+}
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+dl {
+  margin-bottom: 20px;
+}
+dt,
+dd {
+  line-height: 20px;
+}
+dt { font-weight: bold; }
+dd { margin-left: 10px; }
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #ffffff;
+}
+.bootstrap .hr {
+  padding: 20px 0;
+}
+code,
+pre {
+  padding: 0 3px 2px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 12px;
+  color: #333333;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+code {
+  padding: 2px 4px;
+  color: #d14;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+/* 
+/* Mendix Login
+/*************************/
+.bootstrap .mendixLogin_underlayBlocked { background: #f5f5f5; }
+.bootstrap .mendixLogin {
+  max-width: 400px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.bootstrap .mendixLogin_container {
+  margin: 10px 0;
+}
+.bootstrap .mendixLogin_loginTable th, 
+.bootstrap .mendixLogin_loginTable td {
+  float: none;
+}
+.bootstrap .mendixLogin_formInput {
+  width: 240px;
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 0;
+  padding: 7px 9px;
+}
+.bootstrap .mendixLogin_loginResult {
+  position: absolute;
+  left: 18%;
+  top: 96px;
+  color: #B94A48;
+}
+.bootstrap .mendixLogin_topPane { padding-bottom: 45px; }
+
+/* 
+/* Mendix Styling
+/*************************/
+.bootstrap .MxClient_contentContainer {
+  border-style: none;
+  margin: auto;
+  width: 1170px;
+}
+.bootstrap .MxClient_titlepath {
+  height: auto;
+  padding: 8px 15px;
+  margin: 0 0 20px;
+  border-style: none;
+  background: #f5f5f5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: none;
+}
+.bootstrap .mendixTitlePath_navItem {
+  text-shadow: 0 1px 0 #FFF;
+  color: #08C;
+}
+.bootstrap .mendixTitlePath_navItemActive { color: #999; }
+.bootstrap .MxClient_mainContainer { width: auto; }
+.bootstrap .MxClient_headerPane {
+	height: auto;
+	padding: 0;	
+	background: none;
+}
+.bootstrap .mendixFormTitle {
+  border-bottom: 1px solid #EEEEEE;
+  margin: 20px 0 30px;
+  padding-bottom: 9px;
+}
+.bootstrap .mendixFormTitle_title {
+  margin: 10px 0;
+  font-size: 36px;
+  line-height: 40px;
+  color: #5A5A5A;
+}
+.bootstrap .mendixFormView_headerLabel .mendixFormView_label {
+  padding: 0;
+  color: #333333;
+  font-size: 30px;
+  line-height: 40px;
+  border-style: none;
+  background: none;
+}
+.bootstrap .code .mendixFormView_label {
+  background-color: #F7F7F9;
+  border: 1px solid #E1E1E8;
+  color: #DD1144;
+  font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+.bootstrap .mendixFormView_tableHead .mendixFormView_label { font-weight: bold; }
+.bootstrap .mendixFormView .mendixFormView_tableHead .mendixFormView_label { font-weight: normal; }
+.bootstrap .mendixWindow {
+  background-color: #ffffff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #999;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  outline: none;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+}
+.bootstrap .mendixWindow_header {
+  padding: 9px 15px;
+  border-width: 0 0 1px 0;
+  border-color: #eee;
+  background: #FFF;
+}
+.bootstrap .mendixWindow_title {
+  text-shadow: none;
+  color: #333;
+  line-height: 30px;
+  font-size: 24.5px;
+}
+.bootstrap .mendixWindow_button {
+  width: 14px;
+  height: 14px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.bootstrap .mendixWindow_buttonClose { background: url(images/layout/icons/glyphicons-halflings.png) no-repeat 69% 0; }
+.bootstrap .mendixWindow_buttonMaximize { background: url(images/layout/icons/glyphicons-halflings.png) no-repeat 79% 67%; }
+.bootstrap .mendixWindow_content { border-style: none; }
+.bootstrap .mendixWindow .mendixFormView_tableHead, 
+.bootstrap .mendixWindow .mendixFormView_tableData {
+  background: #FFF;
+}
+.bootstrap .MxClient_formDisabled {
+  border-color: #CCC;
+  color: #999;
+  background-color: #EEE;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset !important;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset !important;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset !important;
+}
+.bootstrap .MxClient_formDisabled:focus {
+  border-color: #CCC; 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.024) inset !important;
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.024) inset !important;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.024) inset !important;
+}
+
+/* 
+/* Typo
+/*************************/
+.bootstrap .muted { color: #999; }
+.bootstrap .text-warning { color: #C09853; }
+.bootstrap .text-error { color: #B94A48; }
+.bootstrap .text-info { color: #3A87AD; }
+.bootstrap .text-success { color: #468847; }
+
+.bootstrap .page-header {
+  position: relative;
+  border-bottom: 1px solid #EEEEEE;
+  margin: 20px 0 30px;
+  padding-bottom: 9px;
+}
+.bootstrap .page-header .subtext {
+  color: #999999;
+  font-size: 24px;
+  font-weight: normal;
+  position: absolute;
+  top: 8px;
+}
+
+/* 
+/* Buttons
+/*************************/
+.bootstrap .mendix_Button_button {
+  padding: 4px 14px;
+  *margin-left: .3em;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #bbbbbb;
+  *border: 0;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap .mendix_Button_button .mendix_Button_content { padding: 0; }
+.bootstrap .mendix_Button_button .mendix_Button_caption {
+  font-weight: normal;
+  padding: 0;
+  font-size: 14px;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+.bootstrap .mendix_Button_buttonHover {
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+}
+.bootstrap .btn-primary.mendix_Button_button {
+  background-color: #006dcc;
+  *background-color: #0044cc;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+.bootstrap .btn-primary.mendix_Button_buttonHover {
+  background-color: #0044cc;
+  *background-color: #003bb3;
+}
+.bootstrap .btn-warning {
+  background-color: #faa732;
+  *background-color: #f89406;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  border-color: #f89406 #f89406 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+.bootstrap .btn-warning.mendix_Button_buttonHover {
+  background-color: #f89406;
+  *background-color: #df8505;
+}
+.bootstrap .btn-danger {
+  background-color: #da4f49;
+  *background-color: #bd362f;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-repeat: repeat-x;
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+.bootstrap .btn-danger.mendix_Button_buttonHover {
+  background-color: #bd362f;
+  *background-color: #a9302a;
+}
+.bootstrap .btn-success {
+  background-color: #5bb75b;
+  *background-color: #51a351;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-repeat: repeat-x;
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+.bootstrap .btn-success.mendix_Button_buttonHover {
+  background-color: #51a351;
+  *background-color: #499249;
+}
+.bootstrap .btn-info {
+  background-color: #49afcd;
+  *background-color: #2f96b4;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+.bootstrap .btn-info.mendix_Button_buttonHover {
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
+}
+.bootstrap .btn-inverse {
+  background-color: #363636;
+  *background-color: #222222;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
+  background-image: -webkit-linear-gradient(top, #444444, #222222);
+  background-image: -o-linear-gradient(top, #444444, #222222);
+  background-image: linear-gradient(to bottom, #444444, #222222);
+  background-image: -moz-linear-gradient(top, #444444, #222222);
+  background-repeat: repeat-x;
+  border-color: #222222 #222222 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+.bootstrap .btn-inverse.mendix_Button_buttonHover {
+  background-color: #222222;
+  *background-color: #151515;
+}
+.bootstrap .btn-primary .mendix_Button_caption,
+.bootstrap .btn-warning .mendix_Button_caption,
+.bootstrap .btn-danger .mendix_Button_caption,
+.bootstrap .btn-success .mendix_Button_caption,
+.bootstrap .btn-info .mendix_Button_caption,
+.bootstrap .btn-inverse .mendix_Button_caption {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Button Sizes */
+.bootstrap .btn-small .mendix_Button_button {
+  padding: 3px 9px;
+}
+.bootstrap .btn-small .mendix_Button_button .mendix_Button_caption { 
+  font-size: 12px;
+  line-height: 18px;
+}
+.bootstrap .btn-mini .mendix_Button_button {
+  padding: 2px 6px;
+}
+.bootstrap .btn-mini .mendix_Button_button .mendix_Button_caption { 
+  font-size: 11px;
+  line-height: 17px;
+}
+.bootstrap .btn-large .mendix_Button_button,
+.bootstrap .mendixLogin_formButton {
+  border-radius: 5px 5px 5px 5px;
+  padding: 9px 14px;
+}
+.bootstrap .btn-large .mendix_Button_button .mendix_Button_caption,
+.bootstrap .mendixLogin_formButton { 
+  font-size: 16px;
+}
+.bootstrap .mendixLogin_formButton,
+.bootstrap .mendixLogin_formLabel {
+  font-weight: normal;
+}
+.bootstrap .btn-block .mendix_Button_button {
+  -moz-box-sizing: border-box;
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
+/* Pagination buttons */
+.bootstrap .pagination .mendixFormView_tableData {
+  padding: 0;
+}
+.bootstrap .pagination .pagerButton {
+  border-width: 1px 1px 1px 0;
+  margin-right: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 0;
+}
+.bootstrap .pagination .pagerButton-first {
+  border-left-width: 1px;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.bootstrap .pagination .pagerButton-last {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.bootstrap .pagerButton {
+  border: 1px solid #DDDDDD;
+  border-radius: 15px 15px 15px 15px;
+  padding: 5px 14px;
+  background: #FFF;
+  box-shadow: none;
+  transition: none;
+}
+.bootstrap .pagerButton.mendix_Button_buttonHover { background: #F5F5F5; }
+.bootstrap .pagerButton .mendix_Button_caption { color: #0088CC; }
+.bootstrap .pagerButton.mendix_Button_buttonHover .mendix_Button_caption { color: #005580; }
+
+/* 
+/* Tables
+/*************************/
+.bootstrap .table .mendixFormView_tableHead { text-align: left; }
+.bootstrap .table .mendixFormView_tableData {
+  border-top: 1px solid #DDD;
+  line-height: 20px;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+.bootstrap .table-striped tbody tr:nth-child(2n+1) td { background-color: #F9F9F9; }
+.bootstrap .table-bordered table {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-collapse: separate;
+    border-color: #DDDDDD #DDDDDD #DDDDDD -moz-use-text-color;
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px 0;
+}
+.bootstrap .table-bordered th, 
+.bootstrap .table-bordered td {
+    border-left: 1px solid #DDDDDD;
+}
+.bootstrap .table-bordered caption + thead tr:first-child th, 
+.bootstrap .table-bordered caption + tbody tr:first-child th, 
+.bootstrap .table-bordered caption + tbody tr:first-child td, 
+.bootstrap .table-bordered colgroup + thead tr:first-child th, 
+.bootstrap .table-bordered colgroup + tbody tr:first-child th, 
+.bootstrap .table-bordered colgroup + tbody tr:first-child td, 
+.bootstrap .table-bordered thead:first-child tr:first-child th, 
+.bootstrap .table-bordered tbody:first-child tr:first-child th, 
+.bootstrap .table-bordered tbody:first-child tr:first-child td {
+  border-top: 0 none;
+}
+.bootstrap .table-bordered thead:first-child tr:first-child th:first-child, 
+.bootstrap .table-bordered tbody:first-child tr:first-child td:first-child {
+  border-top-left-radius: 4px;
+}
+.bootstrap .table-bordered thead:first-child tr:first-child th:last-child, 
+.bootstrap .table-bordered tbody:first-child tr:first-child td:last-child {
+  border-top-right-radius: 4px;
+}
+.bootstrap .table-bordered thead:last-child tr:last-child th:first-child, 
+.bootstrap .table-bordered tbody:last-child tr:last-child td:first-child, 
+.bootstrap .table-bordered tfoot:last-child tr:last-child td:first-child {
+  border-radius: 0 0 0 4px;
+}
+.bootstrap .table-bordered thead:last-child tr:last-child th:last-child, 
+.bootstrap .table-bordered tbody:last-child tr:last-child td:last-child, 
+.bootstrap .table-bordered tfoot:last-child tr:last-child td:last-child {
+  border-bottom-right-radius: 4px;
+}
+.bootstrap .table-bordered caption + thead tr:first-child th:first-child, 
+.bootstrap .table-bordered caption + tbody tr:first-child td:first-child, 
+.bootstrap .table-bordered colgroup + thead tr:first-child th:first-child, 
+.bootstrap .table-bordered colgroup + tbody tr:first-child td:first-child {
+  border-top-left-radius: 4px;
+}
+.bootstrap .table-bordered caption + thead tr:first-child th:last-child, 
+.bootstrap .table-bordered caption + tbody tr:first-child td:last-child, 
+.bootstrap .table-bordered colgroup + thead tr:first-child th:last-child, 
+.bootstrap .table-bordered colgroup + tbody tr:first-child td:last-child {
+  border-top-right-radius: 4px;
+}
+.bootstrap .table tr.success td { background-color: #DFF0D8; }
+.bootstrap .table tr.error td { background-color: #F2DEDE; }
+.bootstrap .table tr.warning td { background-color: #FCF8E3; }
+.bootstrap .table tr.info td { background-color: #D9EDF7; }
+.navbar {
+  overflow: visible;
+  margin-bottom: 20px;
+  color: #777777;
+  *position: relative;
+  *z-index: 2;
+}
+.navbar-inner {
+  min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  *zoom: 1;
+}
+.navbar-inner:before,
+.navbar-inner:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.navbar-inner:after { clear: both; }
+.navbar .container { width: auto; }
+.nav-collapse.collapse { height: auto; }
+.navbar .brand {
+  float: left;
+  display: block;
+  padding: 10px 20px 10px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #777777;
+  text-shadow: 0 1px 0 #ffffff;
+}
+.navbar .brand:hover {
+  text-decoration: none;
+}
+.navbar-text {
+  margin-bottom: 0;
+  line-height: 40px;
+}
+.navbar-link { color: #777; }
+.navbar-link:hover { color: #333333; }
+.navbar .divider-vertical {
+  height: 40px;
+  margin: 0 9px;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #ffffff;
+}
+.navbar .btn,
+.navbar .btn-group {
+  margin-top: 5px;
+}
+.navbar .btn-group .btn,
+.navbar .input-prepend .btn,
+.navbar .input-append .btn {
+  margin-top: 0;
+}
+.navbar-static-top {
+  position: static;
+  width: 100%;
+  margin-bottom: 0;
+}
+.navbar-static-top .navbar-inner {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  margin-bottom: 0;
+}
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+  border-width: 0 0 1px;
+}
+.navbar-fixed-bottom .navbar-inner {
+  border-width: 1px 0 0;
+}
+.navbar-fixed-top .navbar-inner,
+.navbar-fixed-bottom .navbar-inner {
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 1170px;
+}
+.navbar-fixed-top {
+  top: 0;
+}
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-fixed-bottom {
+  bottom: 0;
+}
+.navbar-fixed-bottom .navbar-inner {
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 -1px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 -1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 -1px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+.navbar .nav.pull-right {
+  float: right;
+  margin-right: 0;
+}
+.navbar .btn-navbar {
+  display: none;
+  float: right;
+  padding: 7px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #ededed;
+  background-image: -moz-linear-gradient(top, #f2f2f2, #e5e5e5);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f2f2f2, #e5e5e5);
+  background-image: linear-gradient(to bottom, #f2f2f2, #e5e5e5);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2f2f2', endColorstr='#ffe5e5e5', GradientType=0);
+  border-color: #e5e5e5 #e5e5e5 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e5e5e5;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+}
+.navbar .btn-navbar:hover,
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active,
+.navbar .btn-navbar.disabled,
+.navbar .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #e5e5e5;
+  *background-color: #d9d9d9;
+}
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active {
+  background-color: #cccccc \9;
+}
+.navbar-inverse { color: #999999; }
+.navbar-inverse .navbar-inner {
+  background-color: #1b1b1b;
+  background-image: -moz-linear-gradient(top, #222222, #111111);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+  background-image: -webkit-linear-gradient(top, #222222, #111111);
+  background-image: -o-linear-gradient(top, #222222, #111111);
+  background-image: linear-gradient(to bottom, #222222, #111111);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+  border-color: #252525;
+}
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+  color: #999999;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar-inverse .brand:hover, .navbar-inverse .nav > li > a:hover { color: #FFF; }
+
+.bootstrap .MxClient_navbar {
+  display: block;
+  float: left;
+  left: 0;
+  margin: 0 10px 0 0;
+  position: relative;
+}
+.bootstrap .dijitToolbar .dijitButton,
+.bootstrap .dijitToolbar .dijitDropDownButton,
+.bootstrap .dijitToolbar .dijitHover,
+.bootstrap .dijitToolbar .dijitFocused {
+  padding: 0;
+  border-style: none;
+  background: none;
+}
+.bootstrap .mendixNavbar .dijitToolbar .dijitButtonText {
+  padding: 10px 15px;
+  font-weight: normal;
+  color: #999999;
+  font-size: 14px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.bootstrap .mendixNavbar .dijitToolbar .dijitDropDownButton .dijitButtonText {
+  padding-right: 0;
+}
+.bootstrap .mendixNavbar .dijitToolbar .dijitHover .dijitButtonText,
+.bootstrap .dijitToolbar .dijitFocused .dijitButtonText {
+  color: #FFF;
+}
+.bootstrap .mendixNavbar .dijitArrowButtonInner {
+  width: 8px;
+  height: 4px;
+  background-position: center top;
+  background-image: url(images/layout/icons/menu-arrow.png) !important;
+}
+.bootstrap .mendixNavbar .dijitToolbar .dijitHover .dijitArrowButtonInner,
+.bootstrap .mendixNavbar .dijitToolbar .dijitFocused .dijitArrowButtonInner {
+  background-position: center bottom;
+  background-image: url(images/layout/icons/menu-arrow.png) !important;
+}
+.bootstrap .dijitMenuPopup {
+  z-index: 1060 !important;
+}
+.bootstrap .dijitMenu {
+  min-width: 160px;
+  padding: 5px 0;
+  margin: -1px 0 0;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+.bootstrap .dijitMenu:before {
+  position: absolute;
+  top: -7px;
+  left: 9px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+.bootstrap .dijitMenu:after {
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  border-left: 6px solid transparent;
+  content: '';
+} 
+.bootstrap .dijitMenuPassive .dijitMenuItemHover, 
+.bootstrap .dijitMenuItemSelected { 
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+.bootstrap .dijitMenu .dijitMenuItem .dijitMenuItemLabel {
+  padding: 3px 20px;
+}
+.bootstrap .dijitMenu .dijitMenuItemHover td,
+.bootstrap .dijitMenu .dijitMenuItemSelected td {
+  color: #FFF;
+}
+.bootstrap .mendixFormView_controlPane {
+  padding: 19px 20px 20px;
+  background-color: #F5F5F5;
+  border-top: 1px solid #E5E5E5;
+}
+.bootstrap .mendixDataGrid_pagingBarPane .mendixDataGrid_pagingButton {
+  padding: 4px 12px;
+  border-color: #DDDDDD;
+  background: none;
+  box-shadow: none;
+}
+.bootstrap .mendixDataGrid_pagingBarPane .mendix_Button_button .mendix_Button_content, 
+.bootstrap .templatesystemTemplateGrid_pagingBarPane .mendix_Button_button .mendix_Button_content {
+  padding: 0;
+}
+.bootstrap .hero-unit {
+  background-color: #EEEEEE;
+  border-radius: 6px 6px 6px 6px;
+  color: inherit;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  margin-bottom: 30px;
+  padding: 60px;
+}
+.bootstrap .hero-unit .mendixFormView_tableData {
+  background: none;
+}
+.bootstrap .hero-unit .mendixFormView_headerLabel .mendixFormView_label  {
+  color: inherit;
+  font-size: 60px;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.bootstrap .thumbnail > table {
+  width: 31.623931623931625%;
+  padding: 4px;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055); 
+}
+.bootstrap .thumbnail .mendixFormView_headerLabel .mendixFormView_label {
+  color: #555;
+  font-size: 24px;
+}
+.bootstrap .thumbnail img {
+  padding: 0;
+  border-style: none;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+.bootstrap .thumbnail .mendixFormView_tableData { padding: 9px; }
+.bootstrap tfoot .mendixDataGrid_tableRow .mendixDataGrid_tableHead, 
+.bootstrap .mendixDataGrid_tableRow .mendixDataGrid_tableData {
+  border-width: 0 0 0 1px;
+}
+.bootstrap .mendixDataGrid_tableRow .mendixDataGrid_tableDataLast, 
+.bootstrap tfoot .mendixDataGrid_tableRow .mendixDataGrid_tableHeadLast {
+  border-right: 1px solid #C4C0C8;
+}
+.bootstrap .mendixDataGrid_tableRowLast .mendixDataGrid_tableData, 
+.bootstrap tfoot .mendixDataGrid_tableRow .mendixDataGrid_tableData {
+  border-bottom: 1px solid #C4C0C8;
+}
+
+/* 
+/* Images
+/*************************/
+.bootstrap .thumbnails img {
+  padding: 4px;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+}
+.bootstrap .img-rounded {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.bootstrap .img-circle {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+.bootstrap .img-polaroid {
+  padding: 4px;
+  background-color: white;
+  border: 1px solid #CCC;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+/* Labels and Badges
+/*************************/
+.bootstrap .label,
+.bootstrap .badge {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 11.844px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #999999;
+}
+.bootstrap .label {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.bootstrap .badge {
+  padding-right: 9px;
+  padding-left: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+.bootstrap .label-important,
+.bootstrap .badge-important {
+  background-color: #b94a48;
+}
+.bootstrap .label-warning,
+.bootstrap .badge-warning {
+  background-color: #f89406;
+}
+.bootstrap .label-success,
+.bootstrap .badge-success {
+  background-color: #468847;
+}
+.bootstrap .label-info,
+.bootstrap .badge-info {
+  background-color: #3a87ad;
+}
+.bootstrap .label-inverse,
+.bootstrap .badge-inverse {
+  background-color: #333333;
+}
+
+/* 
+/* Navs and Tabs
+/*************************/
+.bootstrap .dijitTabListWrapper {
+  padding: 0;
+  height: 36px !important;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #DDD;
+  margin-bottom: 5px;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.bootstrap .dijitTabPaneWrapper { border-style: none; }
+.bootstrap .mendixTabContainer .dijitTabContainerTop-tabs { padding: 0; }
+.bootstrap .mendixTabContainer .dijitTab {
+  margin-right: 2px;
+  padding: 8px 12px;
+  border: 1px solid transparent;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+.bootstrap .mendixTabContainer .dijitTabHover {
+  border-color: #eeeeee #eeeeee #dddddd;
+  background: #EEE;
+}
+.bootstrap .dijitTabInnerDiv {
+  padding: 0;
+}
+.bootstrap .mendixTabContainer .dijitTabChecked {
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  background: #FFF;
+}
+.bootstrap .mendixTabContainer .dijitTab .tabLabel {
+  color: #08C;
+  text-shadow: none;
+  font-weight: normal;
+}
+.bootstrap .mendixTabContainer .dijitTabChecked .tabLabel {
+  color: #555;
+  font-weight: normal;
+}
+.bootstrap .mendixTabContainer .dijitTabHover .tabLabel {
+  color: #005580;
+  text-decoration: none;
+}
+
+/* Basic pills */
+.bootstrap .nav-pills .dijitTabListWrapper {
+  border-style: none;
+}
+.bootstrap .nav-pills .dijitTab {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+.bootstrap .nav-pills .dijitTab .tabLabel {
+  margin: 2px 0 2px 2px;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+.bootstrap .nav-pills .dijitTabHover {
+  border-style: none;
+  background: none;
+}
+.bootstrap .nav-pills .dijitTabHover .tabLabel {
+  background: #EEE;
+}
+.bootstrap .nav-pills .dijitTabChecked {
+  border-style: none;
+  background: none;
+  border-radius: 0;
+}
+.bootstrap .nav-pills .dijitTabChecked .tabLabel {
+  color: #FFF;
+  background: #0088CC;
+}
+
+/* Nav lists */
+.bootstrap .nav-list {
+  max-width: 340px;
+  padding: 8px 0;
+  margin-bottom: 5px;
+  background-color: #F5F5F5;
+  border: 1px solid #E3E3E3;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+}
+.bootstrap .nav-list .mendixFormView_tableRow .mendixFormView_tableHead {
+  padding: 3px 15px;
+}
+.bootstrap .nav-list .mendixFormView_tableHead,
+.bootstrap .nav-list .mendixFormView_tableData {
+  text-align: left;
+  padding: 0;
+  background: none;
+}
+.bootstrap .nav-list .mendixFormView_tableHead .mendixFormView_label {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  color: #999999;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.bootstrap .nav-list .mendix_Button_link {
+  display: block;
+  margin: 0;
+}
+.bootstrap .nav-list .mendix_Button_link .mendix_Button_caption {
+  padding: 3px 15px;
+  display: block;
+}
+.bootstrap .nav-list .active .mendix_Button_caption {
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #0088CC;
+}
+.bootstrap .nav-list .mendix_Button_image {
+  float: left;
+  margin: 6px 5px 0 5px;
+}
+.bootstrap .nav-list .active .mendix_Button_linkHover .mendix_Button_caption {
+  background-color: #0088CC;
+}
+.bootstrap .nav-list .mendix_Button_linkHover .mendix_Button_caption {
+  text-decoration: none;
+  background: #EEE;
+}
+.bootstrap .nav-list .nav-list-divider {
+  background-color: #E5E5E5;
+  border-bottom: 1px solid #FFFFFF;
+  height: 1px;
+  margin: 9px 1px;
+  overflow: hidden;
+}
+.bootstrap .divider {
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #ffffff;
+  background: none;
+}
+
+/* 
+/* JavaScript
+/*************************/
+.bootstrap .dijitTooltipContainer {
+  padding: 2px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #FFF;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+.bootstrap .dijitTooltipRight .dijitTooltipConnector {
+  height: 21px;
+  width: 11px;
+  left: 4px;
+  top: 50%;
+  background-image: url(images/layout/icons/popover-connector-left.png);
+}
+.bootstrap .popover-title {
+  border-bottom: 1px solid #ebebeb;
+  background: #f7f7f7;
+}
+.bootstrap .popover-title .MxClient_formDisabled {
+  font-size: 14px;
+}
+.bootstrap .read-only {
+  color: #333;
+  background: none;
+  border-style: none;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+}
+
+/* Collapse */
+.bootstrap .collapse-group .mendixFormView_tableData {
+  padding: 1px 5px;
+}
+.bootstrap .collapse-toggle .mendix_Button_button {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border-color: #E5E5E5;
+  background: #FFF;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.bootstrap .collapse-toggle .mendix_Button_button .mendix_Button_content {
+  padding: 8px 15px;
+}
+.bootstrap .collapse-toggle .mendix_Button_button .mendix_Button_caption {
+  color: #08C;
+  font-size: 14px;
+  text-shadow: none;
+}
+.bootstrap .collapse-toggle .mendix_Button_buttonHover .mendix_Button_caption {
+  color: #005580;
+  text-decoration: underline;
+}
+.bootstrap .collapse-group .read-only {
+  padding: 5px 15px;
+  border: 1px solid #E5E5E5;
+  margin-top: -5px;
+  background: #FFF;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;  
+}
+
+/* Alerts */
+.bootstrap .dijitDialogCloseIcon { top: 8px; }
+.bootstrap .mendixDialog { border-radius: 4px 4px 4px 4px; }
+.bootstrap .mendixDialog .dijitDialogPaneContent,
+.bootstrap .mendixDialog .mendixDialog_contentWrapper {
+  padding-left: 10px;
+  background: none;
+}
+.bootstrap .mendixDialogInformation .dijitDialogPaneContent { color: #3A87AD; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+.bootstrap .mendixDialogError .dijitDialogPaneContent { color: #B94A48; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+.bootstrap .mendixDialogWarning .dijitDialogPaneContent { color: #FFF; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+.bootstrap .mendixDialogInformation {
+  border: 1px solid #BCE8F1 !important;
+  background: #D9EDF7;
+}
+.bootstrap .mendixDialogError {
+  border: 1px solid #B94A48 !important;
+  background: #F2DEDE;
+}
+.bootstrap .mendixDialogWarning {
+  border: 1px solid #F89406 !important;
+  background: #FAA732;
+}
